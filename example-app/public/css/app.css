@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.header-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.header-nav a:hover {
+    color: #ffcc00;
+}
+
+footer {
+    background-color: #555;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-disclaimer {
+    font-size: 12px;
+}
+
+.players {
+    text-align: center;
+    padding: 20px;
+}
+
+.players h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.players-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.players-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    text-align: left;
+}
+
+.players-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.players-card p {
+    margin-bottom: 8px;
+}
+
+.players-card p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.players-card p:not(:first-child) {
+    font-size: 14px;
+}
+
+.find {
+    text-align: center;
+    padding: 20px;
+}
+
+.find h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.find-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.find-elements input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    max-width: 100%;
+}
+
+.find-elements button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.find-elements button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.teams {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.teams h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.teams-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teams-card {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+}
+
+.teams-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.teams-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.leagues {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.leagues h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.leagues-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.leagues-card {
+    width: 200px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.leagues-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.leagues-card p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.leagues-card p:last-child {
+    font-size: 14px;
+    color: #777;
+}

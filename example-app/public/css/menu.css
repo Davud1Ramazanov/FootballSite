@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.header-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.header-nav a:hover {
+    color: #ffcc00;
+}
+
+footer {
+    background-color: #555;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-disclaimer {
+    font-size: 12px;
+}
+
+.venues {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.venues h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.venues-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.venues-card {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.venues-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.venues-card p {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.fixtures {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.fixtures h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.fixtures-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.fixtures-results {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.fixtures-results p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
