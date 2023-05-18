@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sport</title>
-        <link href="{{ asset('css/menu.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/menu.css') }}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
@@ -28,36 +28,80 @@
         </div>
     </div>
 
-    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img
-                    src="https://rare-gallery.com/mocahbig/392954-fifa-22-football-game-football-player-4k-pc-wallpaper.jpg"
-                    class="d-block w-100"
-                    alt="photo1"
-                    style="height: 500px; width: 200px;padding: 50px; margin-top: 1%">
-            </div>
-            <div class="carousel-item">
-                <img
-                    src="https://4kwallpapers.com/images/wallpapers/vinicius-junior-brazilian-football-player-vini-jr-soccer-3840x2160-7795.jpg"
-                    class="d-block w-100" alt="..." style="height: 500px;padding: 50px; width: 200px; margin-top: 1%">
-            </div>
-            <div class="carousel-item">
-                <img
-                    src="https://free4kwallpapers.com/uploads/originals/2016/07/22/cristiano-ronaldo-portuguese-football-player-4k-wallpaper.jpg"
-                    class="d-block w-100" alt="..." style="height: 500px;padding: 50px; width: 200px; margin-top: 1%">
-            </div>
+    <div class="greetengs">
+        <h1>Welcome to our football family!</h1>
+        <p>
+            Welcome to the ultimate destination for football enthusiasts! Whether you're a die-hard fan, a passionate
+            player, or simply someone who appreciates the beautiful game, you've come to the right place.
+            Our football website is your go-to resource for all things related to the world's most popular sport. From
+            the latest news and match analyses to insightful interviews with players and coaches, we strive to bring you
+            comprehensive coverage that keeps you in the loop.
+        </p>
+    </div>
+
+    <div class="banner">
+        <img src="https://www.japantimes.co.jp/wp-content/uploads/2023/02/np_file_211769.jpeg" alt="Football"
+             class="banner-image">
+        <div class="banner-content">
+            <h1 class="banner-title">Get Ready for the Ultimate Football Experience!</h1>
+            <p class="banner-description">Explore the latest news, scores, and highlights.</p>
+            <a href="https://www.sportmonks.com/football-api/free-plan/" class="banner-button">Visit Now</a>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" ching
-                data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-                data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+    </div>
+
+
+    <div class="countries">
+        <h1>Countries</h1>
+        <div class="countries-container">
+            @foreach(array_slice($api_arr['countries'], 0, 10) as $country)
+                <div class="countries-card">
+                    <img src="{{ $country['image_path'] }}">
+                    <p>Country: {{ $country['name'] }}</p>
+                </div>
+            @endforeach
+        </div>
+    </div>
+
+    <div class="quote">
+        <h2>Always stay with us to get the latest news</h2>
+    </div>
+
+    <div class="carousel">
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
+             data-bs-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="https://rare-gallery.com/mocahbig/392954-fifa-22-football-game-football-player-4k-pc-wallpaper.jpg"
+                        class="d-block w-100"
+                        alt="photo1"
+                        style="height: 600px; width: 200px;padding: 30px">
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="https://4kwallpapers.com/images/wallpapers/vinicius-junior-brazilian-football-player-vini-jr-soccer-3840x2160-7795.jpg"
+                        class="d-block w-100" alt="..."
+                        style="height: 600px;padding: 30px; width: 200px">
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="https://free4kwallpapers.com/uploads/originals/2016/07/22/cristiano-ronaldo-portuguese-football-player-4k-wallpaper.jpg"
+                        class="d-block w-100" alt="..."
+                        style="height: 600px;padding: 30px; width: 200px">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    ching
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
 
     <div class="venues">
@@ -76,7 +120,7 @@
     <div class="fixtures">
         <h1>Fixtures</h1>
         <div class="fixtures-container">
-            @foreach(array_slice($api_arr['fixtures'], 0, 10) as $fixture)
+            @foreach(array_slice($api_arr['fixtures'], 0, 12) as $fixture)
                 <div class="fixtures-results">
                     <p>Round: {{$fixture['round']}}</p>
                     <p>Starting: {{$fixture['starting_at']}}</p>
